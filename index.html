@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etch a Sketch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Etch A Sketch</h1>
+    <p><em>Anyone can be an artist</em></p>
+  </header>
+  <main>
+    <div class="controls">
+      <button id="clear">Clear</button>
+      <div class="form-group" title="Change no of squares">
+        <label htmlFor="price" id="sizeLablel"><span></span> X <span></span></label>
+        <input type="range" name="size" min="1" max="50" id="size" value="16" className="form-control" />
+      </div>
+      <button id="eraser">Eraser</button>
+      <button id="tenBlack">10% Black</button>
+      <button id="randColor">Random Color</button>
+      <div class="form-group" title="click to pick a color">
+        <label htmlFor="colorInput" id="colorLablel">Change Color:</label>
+        <input type="color" name="colorInput" id="colorInput" value="#000000" className="form-control" />
+      </div>
+    </div>
+    <div class="container"></div>
+  </main>
+  
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
